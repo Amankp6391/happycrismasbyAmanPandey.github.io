@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="icon/icon-192.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico" />
+
+  <title>Christmas Greeting image with Name</title>
+  <meta name="description" content="Christmas Greeting image with Name: Just Enter your Name and Generate Greeting Wish image with your Name."/>
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css" integrity="sha512-RpeJZX3aH5oZN3U3JhE7Sd+HG8XQsqmP3clIbu4G28p668yNsRNj3zMASKe1ATjl/W80wuEtCx2dFA8xaebG5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/greeting.css">
+
+  <script>
+    const canonicalLink = document.createElement('link');
+    canonicalLink.setAttribute('rel', 'canonical');
+    canonicalLink.setAttribute('href', window.location.href);
+    document.head.appendChild(canonicalLink);
+  </script>
+
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-6">
+            <div class="box terminal mt-4">
+              <h1 class="title has-text-warning has-text-centered mt-5">🎄 Christmas Greeting Image 🎅</h1>
+              <br>
+              <div id="output">
+                <p class="has-text-info">🟢 Enter your name to generate a Christmas greeting...</p>
+              </div>
+              <br>
+              <form id="nameForm">
+                <div class="field">
+                  <label for="name" class="label has-text-light">Your Name:</label>
+                  <div class="control">
+                    <input 
+                      type="text" 
+                      id="name" 
+                      class="input is-warning" 
+                      placeholder="Enter your name" 
+                      required 
+                      minlength="2"
+                      maxlength="36"
+                      title="Name should only contain letters and spaces"
+                    >
+                  </div>
+                </div>
+                <div class="field">
+                  <button type="submit" class="button is-warning is-fullwidth">Generate Greeting</button>
+                </div>
+              </form>
+              <hr style="border: 1px solid #92e78f;">
+              <div id="progressContainer" class="is-hidden">
+                <progress class="progress is-success" value="0" max="100">0%</progress>
+                <p class="has-text-danger has-text-centered">ℹ️ Generating your Christmas greeting</p>
+              </div>
+              <div id="greetingImage" class="is-hidden mt-4">
+                <p class="has-text-success has-text-centered">🥳 Your greeting is ready</p><br>
+                <figure class="image is-centered">
+                  <img src="" alt="Christmas Greeting" id="generatedImage">
+                </figure>
+                <a class="button is-info is-fullwidth mt-3" id="downloadImage" download="christmas-greeting.png">Download Greeting</a>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script src="js/greeting.js"></script>
+
+</body>
+</html>

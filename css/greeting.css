@@ -1,0 +1,47 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Anek Tamil", serif;
+    word-wrap: break-word;
+}
+body {
+    background-color:#442241;
+    color: #f0dd71;
+    font-family: "Anek Tamil", serif;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  .terminal {
+    background-color: #272b4b;
+    box-shadow: 0 0 5px #0681e6;
+    padding: 20px;
+    font-family: "Anek Tamil", serif;
+    border-radius: 8px;
+  }
+  .input {
+    font-family: "Anek Tamil", serif;
+    border: 1px solid #ff3860;
+    font-weight: 600;
+  }
+  .button {
+    font-family: "Anek Tamil", serif;
+    font-weight: 600;
+  }
+  #generatedImage {
+    font-family: "Anek Tamil", serif;
+    border: 2px solid #ff3860;
+    border-radius: 8px;
+  }
+  p {
+    font-family: "Anek Tamil", serif;
+    text-shadow: 0 0 2px #A02334;
+  }
+  .title {
+    text-shadow: 0 0 2px #A02334;
+    font-family: "Anek Tamil", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+  }

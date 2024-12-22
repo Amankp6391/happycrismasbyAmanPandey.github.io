@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="icon/icon-192.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico" />
+
+  <title>Christmas Greeting Wishes: Festive Holiday Music & Downloadable Tracks</title>
+  <meta name="description" content="Celebrate the holiday season with Christmas greeting wishes. Enjoy festive holiday songs, play your favorite tracks, and download them to spread joy and cheer this Christmas."/>
+  
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css" integrity="sha512-RpeJZX3aH5oZN3U3JhE7Sd+HG8XQsqmP3clIbu4G28p668yNsRNj3zMASKe1ATjl/W80wuEtCx2dFA8xaebG5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/music.css">
+
+  <link rel="preconnect" href="https://christmaswish.pages.dev">
+
+  <script>
+    const canonicalLink = document.createElement('link');
+    canonicalLink.setAttribute('rel', 'canonical');
+    canonicalLink.setAttribute('href', window.location.href);
+    document.head.appendChild(canonicalLink);
+  </script>
+  
+</head>
+<body>
+
+  <section class="section">
+    <div class="terminal-audio-player">
+      <h1 class="title is-size-6">🎵 Player 🎄</h1>
+      <div class="audio-selector">
+        <label for="audioSelector">Select Track:</label>
+        <select id="audioSelector"></select>
+      </div>
+      <audio id="audio" src="https://christmaswish.pages.dev/wish-one.mp3"></audio>
+      <div class="audio-controls">
+        <button id="playPauseButton">▶️ Play</button>
+        <div class="progress-bar" id="progressBar">
+          <div class="progress" id="progress"></div>
+        </div>
+        <span class="time" id="currentTime">0:00</span>
+      </div>
+      <br>
+      <div class="has-text-centered downloadButton mt-5">
+        <a id="downloadButton" href="https://christmaswish.pages.dev/wish-one.mp3" download="Christmas_Wish_Track.mp3"><b>⬇️ Download</b></a>
+      </div>
+      <br>
+      <hr style="border: 1px solid #92e78f;">
+      <h1 class="is-size-6 has-text-centered">🎄 Merry Christmas 🎅</h1>
+      <br>
+      <p>
+        This Christmas, may your home be filled with laughter, your heart with love, and your days with joy. Here's to a season of blessings and cheer
+      </p>
+      <br>
+    </div>
+  </section>
+  <div id="notification" class="notification">
+    <p></p>
+  </div>
+
+<script src="js/music.js"></script>
+
+</body>
+</html>

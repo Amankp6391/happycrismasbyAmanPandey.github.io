@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="icon/icon-192.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico" />
+
+  <title>Christmas Greeting Wishes in Linux Terminal Style</title>
+  <meta name="description" content="Christmas Greetings: Linux Terminal Style Greeting Wishes with Name."/>
+  
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css" integrity="sha512-RpeJZX3aH5oZN3U3JhE7Sd+HG8XQsqmP3clIbu4G28p668yNsRNj3zMASKe1ATjl/W80wuEtCx2dFA8xaebG5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+
+  <script>
+    const canonicalLink = document.createElement('link');
+    canonicalLink.setAttribute('rel', 'canonical');
+    canonicalLink.setAttribute('href', window.location.href);
+    document.head.appendChild(canonicalLink);
+  </script>
+
+</head>
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <h1 class="is-size-5">🎄 Christmas Greetings 🎅</h1>
+          <div class="toggle-container has-text-centered mt-5">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+          </div>
+          <div class="terminal-box">
+            <form id="greetingForm">
+              <label for="name" class="label text-all mb-4 has-text-centered">Enter your name</label>
+              <div class="field">
+                <div class="control">
+                  <input id="name" class="input is-warning" type="text" placeholder="Your name" maxlength="36" />
+                </div>
+              </div>
+              <button type="submit" class="button is-success is-fullwidth mt-2">Generate Greeting</button>
+            </form>
+          </div>
+
+          <div class="progress-bar-container" style="display: none; text-align: center; margin-top: 50px;">
+            <progress id="loadingProgressBar" class="progress is-success" max="100"></progress>
+            <p id="progressPercentage" style="margin-top: 10px; font-size: 1.2em; font-weight: bold; color: #ffffff;"></p>
+          </div>          
+
+          <div class="terminal-box" id="outputBox" style="display: none;">
+            <h3 class="text-all">🎄 Greeting Preview 🎅</h3>
+            <br>
+            <pre id="asciiOutput"></pre>
+            <br>
+            <button id="downloadBtn" class="button is-success is-fullwidth mt-2">Download Greeting</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <canvas id="asciiCanvas" style="display: none;"></canvas>
+  <div id="notification" class="notification">
+    <p></p>
+  </div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
